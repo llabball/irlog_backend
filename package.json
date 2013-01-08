@@ -1,0 +1,21 @@
+{
+  "name": "lbl",
+  "subdomain": "lbl",
+  "domains": [
+    "backend.lbl.io"
+  ],
+  "version": "0.0.1-2",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "0.8.x"
+  },
+  "dependencies": {
+    "express": "3.0.6",
+    "nano": "3.3.6",
+    "cron": "1.0.1",
+    "time": "0.8.3"
+  }
+}

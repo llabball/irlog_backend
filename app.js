@@ -1,6 +1,7 @@
 var express = require('express')
   , syncpocket = require('./routes/syncpocket')
   , cron = require('./routes/cron')
+  , urlshortener = require('./routes/urlshortener')
   , http = require('http')
   , path = require('path');
 
@@ -19,6 +20,7 @@ app.configure('development', function(){
 });
 
 app.get('/syncpocket', syncpocket.index);
+app.get('/urlshortener/create', urlshortener.index);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
